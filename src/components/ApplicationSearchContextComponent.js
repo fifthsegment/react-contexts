@@ -1,5 +1,5 @@
 import React from 'react';
-import AppContext from '../contexts/appcontext';
+import AppSearchContext from '../contexts/AppSearchContext';
 
 class ApplicationContext extends React.Component {
   constructor(props) {
@@ -16,9 +16,9 @@ class ApplicationContext extends React.Component {
 
   render() {
     return (
-      <AppContext.Provider value={this.state}>
+      <AppSearchContext.Provider value={this.state}>
         {this.props.children}
-      </AppContext.Provider>
+      </AppSearchContext.Provider>
     );
   }
 }
