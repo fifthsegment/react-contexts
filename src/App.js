@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from './components/SearchBar';
 import DataTable from './components/DataTable';
-import ApplicationContext from './components/ApplicationContext';
+import ApplicationSearchContextComponent from './components/ApplicationSearchContextComponent';
 import './style.css';
 
 class App extends React.Component {
@@ -11,12 +11,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <ApplicationContext>
+      <ApplicationSearchContextComponent>
         <h1>Context</h1>
         <p>Value being passed into the ApplicationContext by the SearchBar</p>
         <SearchBar />
         <DataTable />
-      </ApplicationContext>
+      </ApplicationSearchContextComponent>
     );
   }
 }

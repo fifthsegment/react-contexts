@@ -1,5 +1,5 @@
 import React from 'react';
-import AppContext from '../contexts/appcontext';
+import AppSearchContext from '../contexts/AppSearchContext';
 
 class DataTable extends React.Component {
   constructor(props) {
@@ -17,6 +17,6 @@ class DataTable extends React.Component {
     );
   }
 }
-DataTable.contextType = AppContext;
+DataTable.contextType = AppSearchContext;
 
 export default DataTable;

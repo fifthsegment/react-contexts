@@ -1,5 +1,5 @@
 import React from 'react';
-import AppContext from '../contexts/appcontext';
+import AppSearchContext from '../contexts/AppSearchContext';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <AppContext.Consumer>
+        <AppSearchContext.Consumer>
           {({ _, onUpdate }) => {
             return (
               <div>
@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
               </div>
             );
           }}
-        </AppContext.Consumer>
+        </AppSearchContext.Consumer>
       </div>
     );
   }
