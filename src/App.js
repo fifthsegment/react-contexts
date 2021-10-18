@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <ApplicationSearchContextComponent>
-        <h1>Context</h1>
+        <h1>Context Test</h1>
         <p>Value being passed into the ApplicationContext by the SearchBar</p>
         <SearchBar />
         <DataTable />
